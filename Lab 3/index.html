@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+    <style>
+        body>div {
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        fieldset {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        fieldset:first-child {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form name="survey_form" action="confirm.php" method="post">
+            <fieldset>
+                <legend>Your Details</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div><label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Reviews</legend>
+                <p>
+                    How did you heard about us:
+                    <select name="platform">
+                        <option value="google">Google</option>
+                        <option value="magazines">Magazines</option>
+                        <option value="friends">Friends</option>
+                    </select>
+                </p>
+                <p>Would you visit again</p>
+                <div>
+                    <input type="radio" id="revisit_yes" name="revisit" value="Yes"><label for="revisit_yes">Yes</label>
+                    <input type="radio" id="revisit_no" name="revisit" value="No"><label for="revisit_no">No</label>
+                    <input type="radio" id="revisit_maybe" name="revisit" value="Maybe"><label
+                        for="revisit_maybe">Maybe</label>
+                </div>
+                <p>Comments:</p>
+                <div><textarea name="comments" cols="50" rows="3"></textarea></div>
+                <div><input type="checkbox" name="signup" value="signup" checked>Sign me up for email address</div>
+                <div><input type="submit" value="Submit review"></div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
