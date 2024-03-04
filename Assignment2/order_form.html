@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the website for assignment 2: Let's order a pizza">
+    <meta name="keywords" content="pizza italian">
+    <title>Pizza Order Form</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="order">
+    <header>
+        <div class="navbar">
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="restaurant logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="./order_form.html">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- form area -->
+    <section class="main-image">
+        <div class="form-area">
+            <h2>Order Form</h2>
+            <form action="#" method="post" class="order-form">
+                <!-- pizza information -->
+                <div class="form-area-heading">Pizza <img src="./images/pizza-slice-solid.svg" alt="pizza icon"></div>
+
+                <!-- pizza 1 -->
+                <div class="pizza-info">
+                    <label class="bold"><input type="checkbox"> La Ruccoli</label>
+                    <div>
+                        <span>Size: </span>
+                        <label><input type="radio" name="size1"> small</label>
+                        <label><input type="radio" name="size1"> medium</label>
+                        <label><input type="radio" name="size1"> large</label>
+                    </div>
+                    <div>
+                        <span>Topping: </span>
+                        <label><input type="checkbox" name="topping1"> Onion</label>
+                        <label><input type="checkbox" name="topping1"> Salami</label>
+                        <label><input type="checkbox" name="topping1"> mushroom</label>
+                        <label><input type="checkbox" name="topping1"> Cheese</label>
+                    </div>
+                    <div>
+                        <span>Quantity: </span>
+                        <select name="quantity1" class="select-field">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- pizza 2 -->
+                <div class="pizza-info">
+                    <label class="bold"><input type="checkbox"> Picante</label>
+                    <div>
+                        <span>Size: </span>
+                        <label><input type="radio" name="size2"> small</label>
+                        <label><input type="radio" name="size2"> medium</label>
+                        <label><input type="radio" name="size2"> large</label>
+                    </div>
+                    <div>
+                        <span>Topping: </span>
+                        <label><input type="checkbox" name="topping2"> Onion</label>
+                        <label><input type="checkbox" name="topping2"> Salami</label>
+                        <label><input type="checkbox" name="topping2"> mushroom</label>
+                        <label><input type="checkbox" name="topping2"> Cheese</label>
+                    </div>
+                    <div>
+                        <span>Quantity: </span>
+                        <select name="quantity2" class="select-field">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- pizza 3 -->
+                <div class="pizza-info">
+                    <label class="bold"><input type="checkbox"> Picante</label>
+
+                    <div>
+                        <span>Size: </span>
+                        <label><input type="radio" name="size3"> small</label>
+                        <label><input type="radio" name="size3"> medium</label>
+                        <label><input type="radio" name="size3"> large</label>
+                    </div>
+                    <div>
+                        <span>Topping: </span>
+                        <label><input type="checkbox" name="topping3"> Onion</label>
+                        <label><input type="checkbox" name="topping3"> Salami</label>
+                        <label><input type="checkbox" name="topping3"> mushroom</label>
+                        <label><input type="checkbox" name="topping3"> Cheese</label>
+                    </div>
+                    <div>
+                        <span>Quantity: </span>
+                        <select name="quantity3" class="select-field">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- user information -->
+                <div class="form-area-heading">Your information <img src="./images/circle-info-solid.svg"
+                        alt="information icon"></div>
+
+                <div class="personal-info">
+                    <label for="name">Name <span class="color-red bold">*</span></label>
+                    <input type="text" class="input-field" name="name" id="name" required>
+                </div>
+                <div class="personal-info">
+                    <label for="email">Email <span class="color-red bold">*</span></label>
+                    <input type="email" class="input-field" name="email" id="email" required>
+                </div>
+                <div class="personal-info">
+                    <label for="phone">Phone <span class="color-red bold">*</span></label>
+                    <input type="text" class="input-field" name="phone" id="phone" required>
+                </div>
+                <div class="personal-info">
+                    <label for="address">Address</label>
+                    <input type="text" class="input-field" name="address" id="address">
+                </div>
+                <div class="text-align-center">
+                    <input type="submit" value="Order">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer logo/copyright -->
+    <footer>
+        <div class="logo-img">
+            <img src="images/logo.png" alt="restaurant logo">
+        </div>
+        <p class="copy-right color-wh">
+            Copyright &copy; 2024 Pizza Al Pezzo
+        </p>
+    </footer>
+</body>
+
+</html>

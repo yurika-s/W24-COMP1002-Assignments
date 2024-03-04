@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the website for assignment 2: Let's order a pizza">
+    <meta name="keywords" content="pizza italian">
+    <title>Let's Order Pizza</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="home">
+    <header>
+        <div class="navbar">
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="restaurant logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="./order_form.html">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-image"></div>
+    </header>
+    <!-- header-end -->
+
+    <section>
+        <h2>Menu</h2>
+        <div class="menu-list">
+            <!-- pizza 1 -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="./images/pizza_1.png" alt="image of pizza menu La Ruccoli">
+                </div>
+                <p class="card-title">La Ruccoli</p>
+
+                <p class="card-content">tomatoes, prosciutto, arugula, olive, and Parmesan cheese</p>
+                <a href="./order_form.html" class="button-order color-wh">Place Order</a>
+            </div>
+            <!-- pizza 2 -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="./images/pizza_2.png" alt="image of pizza menu Picante">
+                </div>
+                <p class="card-title">Picante</p>
+                <p>Pepperoni, spicy ‘Nduja sausage, Spianata Piccante salami, hot roquito
+                    chillies, mushrooms, and mozzarella & mascarpone</p>
+                <a href="./order_form.html" class="button-order color-wh">Place Order</a>
+            </div>
+            <!-- pizza 3 -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="./images/pizza_3.png" alt="image of pizza menu Italiana">
+                </div>
+                <p class="card-title">Italiana</p>
+                <p class="card-content">Roasted red tomatoes, white cheese, and green herbs</p>
+                <a href="./order_form.html" class="button-order color-wh">Place Order</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- access map -->
+    <section>
+        <h2>Access</h2>
+        <p>One Georgian Dr., Barrie ON L4M 3X9</p>
+        <p><a href="tel:123-456-7890" class="underline">(123)456-7890</a></p>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.35392741774!2d-79.670834976853!3d44.41024046394402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882aa3723e3232f1%3A0xe6be031a81155c65!2z44K444On44O844K444Ki44Oz5aSn5a2m!5e0!3m2!1sja!2sca!4v1709428846822!5m2!1sja!2sca"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- footer logo/copyright -->
+    <footer>
+        <div class="logo-img">
+            <img src="images/logo.png" alt="restaurant logo">
+        </div>
+        <p class="copy-right color-wh">
+            Copyright &copy; 2024 Pizza Al Pezzo
+        </p>
+    </footer>
+</body>
+
+</html>
