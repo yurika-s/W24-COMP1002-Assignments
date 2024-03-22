@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lab 4</h1>
+    <p id="result"></p>
+
+    <script>
+        const resultParagraph = document.getElementById("result");
+        let repeat;
+        do {
+            let sum = 0;
+            let i = 1;
+            let num = parseInt(prompt("Enter an integer number", 100));
+
+            while (i <= num) {
+                sum += i;
+
+                i++;
+            }
+            resultParagraph.innerHTML += `The sum is: <b><span>${sum}</span></b><br>`;
+            //document.write(`<p>The sum is: <b><span>${sum}</span></b></p>`);
+            repeat = prompt("Repeat? (y/n)", "y");
+        } while (repeat == "y")
+
+    </script>
+</body>
+
+</html>
